@@ -79,6 +79,8 @@ function FORM() {
               <option>Others</option>
             </select>
           </div>
+
+          <input type="submit" class="submitBtn"  value="Submit"/>
         </form>
       </div>
     </div>
