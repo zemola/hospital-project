@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px;
+  padding-right: 15%;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
