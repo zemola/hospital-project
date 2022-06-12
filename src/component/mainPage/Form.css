@@ -1,29 +1,85 @@
 .container {
   display: flex;
-  align-content: center;
-}
-
-.image {
-  width: 30%;
+  align-items: center;
+  background-color: hsla(224, 38%, 58%, 0.747);
 }
 
 .form-container {
-  width: 70%;
-  height: 100vh - 100px;
+  max-width: 70%;
+  width: 100%;
+  margin: 0 15px;
+  padding: 15px;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
 }
 
-.form {
+.form-container header {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.form-container header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 27px;
+  background-color: royalblue;
+  border-radius: 8px;
+}
+.form-container form {
+  position: relative;
+  min-height: 490px;
+  margin-top: 16px;
+}
+
+.form-container .name-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.name-group .input-field {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 2 - 15px);
+}
+
+.input-field label {
+  font-size: 20px;
+  font-weight: 400;
+}
+.input-field input {
+  outline: none;
+  border-radius: 5px;
+  border: 15px;
+  height: 41px;
+  padding: 0 15px;
+}
+
+.input-field .number {
   width: 100%;
 }
 
-.names {
-  display: flex;
-  justify-content: space-evenly;
+.name-group select {
+  outline: none;
+  border-radius: 5px;
+  border: 15px;
+  height: 41px;
+  padding: 0 15px;
+  margin-top: 25px;
+  width: calc(100% / 2 - 15px);
 }
 
-.firstname,
-.lastname,
-.email,
-.number,
-.form-group {
+.submitBtn {
+  outline: none;
+  border-radius: 5px;
+  border: 15px;
+  height: 41px;
+  padding: 0 15px;
+  margin-top: 25px;
+  width: 311px;
+  float: right;
 }

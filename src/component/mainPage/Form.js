@@ -11,12 +11,13 @@ function FORM() {
         </p>
       </div>
       <div className="form-container">
+        <div>
+          <header>BOOK AN APPOINTMENT</header>
+        </div>
         <form className="form">
-          <div>
-            <h3>BOOK AN APPOINTMENT</h3>
-          </div>
-          <div className="names">
-            <div className="firstname">
+            <div className="name-group">
+            <div className="input-field">
+              <label>First Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -24,7 +25,8 @@ function FORM() {
                 value=""
               />
             </div>
-            <div className="lastname">
+            <div className="input-field">
+              <label>Last Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -33,8 +35,10 @@ function FORM() {
               />
             </div>
             </div>
-            <div className="names">
-            <div className="email">
+
+            <div className="name-group">
+            <div className="input-field">
+              <label>Email</label>
               <input
                 type="email"
                 class="form-control"
@@ -42,6 +46,8 @@ function FORM() {
                 value=""
               />
             </div>
+            <div className="input-field">
+            <label>Phone Number</label>
             <div class="number">
               <input
                 type="text"
@@ -54,8 +60,9 @@ function FORM() {
               />
             </div>
             </div>
-          
-          <div class="form-group">
+            </div>
+
+          <div class="name-group">
             <select class="form-control">
               <option class="hidden" selected disabled>
                 Please select Doctor
@@ -68,9 +75,7 @@ function FORM() {
               <option>Orthopedic Doctor</option>
               <option>Padatric</option>
             </select>
-          </div>
 
-          <div class="form-group">
             <select class="form-control">
               <option class="hidden" selected disabled>
                 Select Purpose/...ment
@@ -81,8 +86,9 @@ function FORM() {
               <option>Others</option>
             </select>
           </div>
-
-          <input type="submit" class="submitBtn"  value="Submit"/>
+          <div className="submitBtn">
+          <input type="submit" class="submitBtn" value="Submit" />
+          </div>
         </form>
       </div>
     </div>
