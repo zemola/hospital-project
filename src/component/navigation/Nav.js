@@ -4,13 +4,19 @@ import React from 'react';
 function Nav() {
   return (
     <div className='container'>
-      <h1 className='logo'>Logo</h1>
+      <label className='logo'>Logo</label>
       <ul>
         <li>
-          Home
+         <a href='#'>Home</a>
         </li>
         <li>
-          About
+         <a href='#' >Services</a>
+        </li>
+        <li>
+         <a href='#'>About </a>
+        </li>
+        <li>
+         <a href='#'>Contact </a>
         </li>
       </ul>
     </div>

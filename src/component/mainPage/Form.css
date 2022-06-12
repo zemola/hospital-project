@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-content: center;
+}
+
+.image {
+  width: 30%;
+}
+
+.form-container {
+  width: 70%;
+  height: 100vh - 100px;
+}
+
+.form {
+  width: 100%;
+}
+
+.names {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.firstname,
+.lastname,
+.email,
+.number,
+.form-group {
+}

@@ -1,13 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   justify-content: space-between;
-  height: 100px;
-  padding: 10px;
-  padding-right: 15%;
+  padding: 10px 5%;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 35px;
+  line-height: 80px;
+  padding: 15px;
 }
 
 .container ul {
-  display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  display: inline-block;
+}
+
+.container ul li {
+  padding: 15px;
+  display: inline-block;
+  line-height: 80px;
 }

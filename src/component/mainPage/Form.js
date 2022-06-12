@@ -3,19 +3,19 @@ import React from "react";
 
 function FORM() {
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="image">
         <img src="#logo" alt="Company logo" />
         <p>
           This is to test the current project and see our level of developemt{" "}
         </p>
       </div>
-      <div>
-        <form>
+      <div className="form-container">
+        <form className="form">
           <div>
             <h3>BOOK AN APPOINTMENT</h3>
           </div>
-          <div>
+          <div className="names">
             <div className="firstname">
               <input
                 type="text"
@@ -32,6 +32,8 @@ function FORM() {
                 value=""
               />
             </div>
+            </div>
+            <div className="names">
             <div className="email">
               <input
                 type="email"
@@ -51,7 +53,7 @@ function FORM() {
                 value=""
               />
             </div>
-          </div>
+            </div>
           
           <div class="form-group">
             <select class="form-control">
